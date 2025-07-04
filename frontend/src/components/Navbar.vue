@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow-md sticky top-0 z-50 animate-fade-in">
     <nav class="container mx-auto px-6 py-4 flex justify-between items- center">
-      <div class="text-2xl font-bold text-gray-800">Nama Mahasiswa</div>
+      <div class="text-2xl font-bold text-gray-800">Muhammad Yusuf Nurwahid</div>
       <ul class="flex space-x-6">
         <li>
           <a
