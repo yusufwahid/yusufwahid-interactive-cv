@@ -5,7 +5,10 @@
         class="text-5xl font-bold text-gray-800 mb-4 animate-slide- in-left"
         style="animation-delay: 200ms"
       >
-        Halo, Saya <span class="text-orange-600">Muhammad Yusuf Nurwahid</span>
+        Halo, Saya
+        <br>
+        <span class="bg-gradient-to-r from-orange-800 to-orange-600 bg-clip-text text-transparent hover:from-orange-600 hover:to-purple-600 transition-all duration-300 ">Muhammad Yusuf Nurwahid</span>
+        </br>
       </h1>
       <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms">
         Mahasiswa S1 Informatika yang bersemangat dalam pengembangan web dan desain antarmuka.

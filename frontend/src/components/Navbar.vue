@@ -12,7 +12,7 @@
           <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <!-- Nama -->
-        <div class="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
+        <div class="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent hover:from-orange-600 hover:to-purple-600 transition-all duration-300">
           Muhammad Yusuf Nurwahid
         </div>
       </div>
