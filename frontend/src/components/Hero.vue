@@ -1,5 +1,5 @@
 <template>
-  <section id="profil" class="container mx-auto px-6 py-24 md:py-40 flex flex-col md:flex-row items-center transition-colors duration-300">
+  <section id="profil" class="container mx-auto px-6 py-24 md:py-[200px] flex flex-col md:flex-row items-center transition-colors duration-300">
 
     <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
       <h1
