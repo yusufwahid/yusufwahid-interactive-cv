@@ -6,29 +6,28 @@ const educationHistory = [
     { id: 4, period: '2011 - 2017', institution: 'SD Negeri Pete', major: 'Umum' }
 ];
 const skills = [
-  { name: 'Vue.js', level: 'Mahir' },
-  { name: 'JavaScript', level: 'Mahir' },
-  { name: 'Tailwind CSS', level: 'Mahir' },
-  { name: 'Node.js', level: 'Menengah' },
-
-  { name: 'Express.js', level: 'Menengah' },
-  { name: 'PostgreSQL', level: 'Menengah' },
-  { name: 'Git & GitHub', level: 'Mahir' },
-  { name: 'HTML5 & CSS3', level: 'Mahir' },
+        { name: 'Vue.js', level: 'Mahir', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/vuedotjs.svg' },
+        { name: 'JavaScript', level: 'Mahir', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg' },
+        { name: 'Tailwind CSS', level: 'Mahir', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tailwindcss.svg' },
+        { name: 'Node.js', level: 'Menengah', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nodedotjs.svg' },
+        { name: 'Express.js', level: 'Menengah', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/express.svg' },
+        { name: 'PostgreSQL', level: 'Menengah', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/postgresql.svg' },
+        { name: 'Git & GitHub', level: 'Mahir', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/github.svg' },
+        { name: 'HTML5 & CSS3', level: 'Mahir', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg' },
 ];
 const projects = [
   {
     title: 'Website Toko Online',
-    image: 'https://via.placeholder.com/500x300?text=Proyek+1',
+    image: '/project1.jpg',
     description: 'Platform e-commerce dengan fitur keranjang belanja.',
-    tech: ['Vue.js', 'Express.js', 'PostgreSQL'],
+    tech: ['Vue.js', 'Laravel', 'MySQL'],
     link: '#',
   },
   {
     title: 'Aplikasi Manajemen Tugas',
-    image: 'https://via.placeholder.com/500x300?text=Proyek+2',
+    image: '/project2.jpg',
     description: 'Aplikasi untuk melacak progres tugas harian.',
-    tech: ['React', 'Firebase'],
+    tech: ['Vue.js', 'Laravel'],
     link: '#',
   },
 ];

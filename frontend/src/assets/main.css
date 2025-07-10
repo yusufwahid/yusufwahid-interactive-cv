@@ -2,13 +2,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Style untuk animasi scroll yang akan kita pakai nanti */
+
+/* Style untuk animasi scroll (tidak berubah) */
 .before-enter {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease-out;
 }
+
 .enter {
   opacity: 1;
   transform: translateY(0px);
+}
+
+/* Aturan animasi untuk menggerakkan background (tidak berubah) */
+@keyframes animated-gradient {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+/* Background untuk mode terang (light mode) */
+body {
+  background: linear-gradient(
+    110deg,
+    #ffffff 25%,
+    #ffdeb3 50%,
+    #ffffff 75%
+  );
+  background-size: 300% 100%;
+  animation: animated-gradient 10s linear infinite alternate;
+}
+
+/* Background untuk mode gelap (dark mode) */
+.dark body {
+  background: linear-gradient(
+    110deg,
+    #111827 25%,
+    #220d44 50%,
+    #111827 75%
+  );
+  background-size: 300% 100%;
+  /* DITAMBAHKAN: Baris ini membuat background dark mode ikut bergerak */
+  animation: animated-gradient 10s linear infinite alternate;
 }
