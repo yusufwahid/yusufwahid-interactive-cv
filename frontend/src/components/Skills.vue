@@ -14,9 +14,19 @@ response.data; } catch (error) { console.error(error); }
   <section id="skill" class="py-20 relative overflow-hidden transition-colors duration-300">
     <div class="container mx-auto px-6">
       <SectionTitle title="Keahlian & Teknologi" />
-      <div class="flex animate-slide-left">
-        <div class="flex" v-for="n in 2" :key="'row-' + n">
 
+      <div v-if="isLoading" class="flex animate-pulse">
+        <div class="flex" v-for="n in 2" :key="'skeleton-row-' + n">
+          <div v-for="i in 8" :key="'skeleton-item-' + i" class="bg-gray-200 dark:bg-gray-800 p-4 md:p-6 rounded-lg shadow-lg mx-2 md:mx-4 min-w-[120px] md:min-w-[150px] h-[136px] md:h-[168px]"></div>
+        </div>
+      </div>
+
+      <div v-else-if="error" class="text-center py-10">
+        <p class="text-red-500">{{ error }}</p>
+      </div>
+
+      <div v-else class="flex animate-slide-left">
+        <div class="flex" v-for="n in 2" :key="'row-' + n">
           <div
             v-for="skill in skills"
             :key="skill.name + '-' + n"
@@ -27,11 +37,13 @@ response.data; } catch (error) { console.error(error); }
               :alt="`${skill.name} icon`"
               class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 object-contain dark:invert"
               @error="handleImageError($event, skill)"
+              width="64" height="64"
+              loading="lazy"
+              decoding="async"
             >
             <h3 class="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">{{ skill.name }}</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 md:mt-2">{{ skill.level }}</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -74,7 +86,7 @@ img {
 }
 
 .animate-slide-left {
-  animation: slide-left 20s linear infinite;
+  animation: slide-left 40s linear infinite;
 }
 
 @keyframes slide-left {
