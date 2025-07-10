@@ -33,8 +33,8 @@ console.error(error); }
               ? 'md:mr-[calc(50%+1rem)] md:pr-8 md:text-right'
               : 'md:ml-[calc(50%+1rem)] md:pl-8 md:text-left'
           ]">
-            <div class="bg-white dark:bg-gray-800 group hover:bg-gradient-to-r dark:hover:from-gray-800 dark:hover:to-gray-900 from-orange-50 to-orange-100 p-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg dark:hover:shadow-orange-500/20 hover:shadow-orange-200/50 border border-gray-100 dark:border-gray-700">
-              <p class="font-semibold text-orange-600 dark:text-orange-400">{{ edu.period }}</p>
+          <div class="bg-gray-50 dark:bg-gray-900 group hover:bg-gradient-to-r dark:hover:from-gray-800 dark:hover:to-gray-900 from-orange-50 to-orange-100 p-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg dark:hover:shadow-orange-500/20 hover:shadow-orange-200/50 border border-transparent dark:border-transparent dark:hover:border-gray-700">
+            <p class="font-semibold text-orange-600 dark:text-orange-400">{{ edu.period }}</p>
               <h3 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100">
                 {{ edu.institution }}
               </h3>
