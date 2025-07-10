@@ -1,5 +1,5 @@
 <template>
-  <footer id="kontak" class="py-12 md:py-16 bg-gray-800 dark:bg-gray-900 text-white transition-colors duration-300">
+  <footer id="kontak" class="py-12 md:py-16  text-white transition-colors duration-300">
     <div class="container mx-auto px-6 text-center">
 
       <h1 class="text-3xl md:text-4xl text-gray-100 mb-4 font-bold">Hubungi Saya</h1>
