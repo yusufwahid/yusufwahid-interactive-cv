@@ -1,9 +1,9 @@
 <template>
-  <footer id="kontak" class="py-12 md:py-16  text-white transition-colors duration-300">
+  <footer id="kontak" class=" py-12 md:py-16 transition-colors duration-300">
     <div class="container mx-auto px-6 text-center">
 
-      <h1 class="text-3xl md:text-4xl text-gray-100 mb-4 font-bold">Hubungi Saya</h1>
-      <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+      <h1 class="text-3xl md:text-4xl text-gray-800 dark:text-gray-100 mb-4 font-bold">Hubungi Saya</h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
         Saya selalu terbuka untuk diskusi, kolaborasi, atau sekadar menyapa. Jangan ragu untuk terhubung!
       </p>
 
@@ -19,19 +19,17 @@
           href="https://github.com/yusufwahid"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-gray-400 hover:text-white transition-colors duration-300 text-lg"
-          >GitHub</a
-        >
+          class="text-gray-600 hover:text-orange-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-300 text-lg"
+          >GitHub</a>
         <a
           href="https://www.linkedin.com/in/muhammad-yusuf-nurwahid-56a638373/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-gray-400 hover:text-white transition-colors duration-300 text-lg"
-          >LinkedIn</a
-        >
+          class="text-gray-600 hover:text-orange-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-300 text-lg"
+          >LinkedIn</a>
       </div>
 
-      <p class="text-gray-500">
+      <p class="text-gray-500 dark:text-gray-500">
         &copy; {{ new Date().getFullYear() }} Muhammad Yusuf Nurwahid. Dibuat dengan 🧡
       </p>
     </div>
