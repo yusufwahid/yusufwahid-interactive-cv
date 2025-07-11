@@ -14,7 +14,7 @@
         Kirim Email
       </a>
 
-      <div class="flex justify-center space-x-6 mb-8">
+      <div class="flex justify-center space-x-6">
         <a
           href="https://github.com/yusufwahid"
           target="_blank"
@@ -40,7 +40,7 @@
       </div>
     </div>
   </footer>
-          <p class="text-center pb-12 text-gray-500 dark:text-gray-500">
+          <p class="text-center pb-10 text-gray-500 dark:text-gray-500">
         &copy; {{ new Date().getFullYear() }} Muhammad Yusuf Nurwahid. All rights reserved.
       </p>
 
