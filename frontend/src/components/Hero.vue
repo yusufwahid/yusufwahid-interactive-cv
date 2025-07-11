@@ -22,8 +22,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="profil" class="container mx-auto px-6 py-24 md:py-[200px] flex flex-col md:flex-row items-center transition-colors duration-300">
-    <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+<section id="profil" class="container mx-auto px-6 py-16 md:py-[220px] flex flex-col md:flex-row items-center transition-colors duration-300">
+      <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
       <h1
         class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-4 animate-slide-in-left"
         style="animation-delay: 200ms"
