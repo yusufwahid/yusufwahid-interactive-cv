@@ -5,6 +5,9 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       keyframes: {
         'slide-in-left': {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
