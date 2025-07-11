@@ -1,18 +1,14 @@
 <script setup>
+
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
-
 const educationHistory = ref([]);
-
 onMounted(async () => {
-  try {
-    // UBAH BARIS INI
-    const response = await axios.get('/api/education');
-    educationHistory.value = response.data;
-  } catch (error) {
-    console.error('Gagal memuat data pendidikan:', error);
-  }
+try { const response = await
+axios.get('http://localhost:3000/api/education');
+educationHistory.value = response.data; } catch (error) {
+console.error(error); }
 });
 </script>
 

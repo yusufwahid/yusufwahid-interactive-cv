@@ -2,17 +2,11 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
-
 const skills = ref([]);
-
 onMounted(async () => {
-  try {
-    // UBAH BARIS INI
-    const response = await axios.get('/api/skills');
-    skills.value = response.data;
-  } catch (error) {
-    console.error('Gagal memuat data keahlian:', error);
-  }
+try { const response = await
+axios.get('http://localhost:3000/api/skills'); skills.value =
+response.data; } catch (error) { console.error(error); }
 });
 </script>
 
