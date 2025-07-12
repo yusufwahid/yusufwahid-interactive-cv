@@ -1,17 +1,33 @@
-<script setup>
-import { ref, onMounted } from 'vue';
-import axios from 'axios';
-import SectionTitle from './SectionTitle.vue'; // Aktifkan jika Anda punya komponen ini
-const skills = ref([]);
-const API_URL = import.meta.env.PROD ? '/api/skills' :
-'http://localhost:3000/api/skills';
-onMounted(async () => {
-try {
-skills.value = (await axios.get(API_URL)).data;
-} catch (error) {
-console.error('Gagal mengambil data skill:', error);
-}
-});
+<script>
+import SectionTitle from './SectionTitle.vue'; // Adjust path as needed
+
+export default {
+  name: 'Skills',
+  components: { SectionTitle },
+  data() {
+    return {
+      skills: [],
+      isLoading: true,
+      error: null,
+    };
+  },
+  methods: {
+    handleImageError(event, skill) {
+      event.target.src = '/fallback-icon.png'; // Fallback image
+    },
+  },
+  async mounted() {
+    try {
+      const response = await fetch('http://localhost:3000/api/skills');
+      if (!response.ok) throw new Error('Failed to fetch skills data');
+      this.skills = await response.json();
+    } catch (err) {
+      this.error = err.message;
+    } finally {
+      this.isLoading = false;
+    }
+  },
+};
 </script>
 
 <template>
