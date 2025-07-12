@@ -18,7 +18,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await fetch('http://localhost:3000/api/skills');
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/skills`);
       if (!response.ok) throw new Error('Failed to fetch skills data');
       this.skills = await response.json();
     } catch (err) {

@@ -13,7 +13,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await fetch('http://localhost:3000/api/education');
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/education`);
       if (!response.ok) throw new Error('Failed to fetch education data');
       this.educationHistory = await response.json();
     } catch (err) {

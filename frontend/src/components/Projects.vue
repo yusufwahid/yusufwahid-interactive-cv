@@ -13,7 +13,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await fetch('http://localhost:3000/api/projects');
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects`);
       if (!response.ok) throw new Error('Failed to fetch projects data');
       this.projects = await response.json();
     } catch (err) {
