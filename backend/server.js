@@ -5,7 +5,7 @@ const { educationHistory, skills, projects } = require('./data.js');
 const app = express();
 
 // Configure CORS to allow requests from your frontend
-const allowedOrigins = ['https://yusufwahid-interactive-cv-4133.vercel.app'];
+const allowedOrigins = ['https://yusufwahid-interactive-cv.vercel.app'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
