@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <section id="pendidikan" class="py-20 bg-gray-50/50 dark:bg-gray-900/50 transition-colors duration-300">
+  <section id="pendidikan" class="py-20 bg-gray-50/60 dark:bg-gray-900/60 transition-colors duration-300">
     <div class="container mx-auto px-6">
       <SectionTitle title="Riwayat Pendidikan" />
 
