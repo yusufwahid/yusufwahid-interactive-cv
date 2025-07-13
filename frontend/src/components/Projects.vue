@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <section id="proyek" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+  <section id="proyek" class="py-20 bg-white/50 dark:bg-gray-900/50 transition-colors duration-300">
     <div class="container mx-auto px-6">
       <SectionTitle title="Proyek Unggulan" />
 
@@ -34,9 +34,9 @@ export default {
         <div
           v-for="project in projects"
           :key="project.title"
-          class="group bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg dark:border dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:shadow-orange-300/50 dark:hover:shadow-orange-500/40 border-2 border-transparent hover:border-orange-400/50 dark:hover:border-orange-400/50"
+          class="group bg-transparent dark:bg-transparent rounded-lg shadow-lg dark:border dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:shadow-orange-300/50 dark:hover:shadow-orange-500/40 border-2 border-transparent hover:border-orange-400/50 dark:hover:border-orange-400/50"
         >
-          <div class="relative w-full h-48 md:h-56 overflow-hidden bg-gray-200 dark:bg-gray-700">
+          <div class="relative w-full h-48 md:h-56 overflow-hidden bg-white dark:bg-gray-800">
             <img
               :src="project.image"
               alt="Gambar Proyek"
