@@ -1,5 +1,5 @@
 <script>
-import SectionTitle from './SectionTitle.vue'; // Adjust path as needed
+import SectionTitle from './SectionTitle.vue' // Adjust path as needed
 
 export default {
   name: 'Projects',
@@ -9,20 +9,20 @@ export default {
       projects: [],
       isLoading: true,
       error: null,
-    };
+    }
   },
   async mounted() {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects`);
-      if (!response.ok) throw new Error('Failed to fetch projects data');
-      this.projects = await response.json();
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects`)
+      if (!response.ok) throw new Error('Failed to fetch projects data')
+      this.projects = await response.json()
     } catch (err) {
-      this.error = err.message;
+      this.error = err.message
     } finally {
-      this.isLoading = false;
+      this.isLoading = false
     }
   },
-};
+}
 </script>
 
 <template>
@@ -34,7 +34,8 @@ export default {
         <div
           v-for="project in projects"
           :key="project.title"
-class="group bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg dark:border dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:shadow-orange-300/50 dark:hover:shadow-orange-500/40"        >
+          class="group bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg dark:border dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:shadow-orange-300/50 dark:hover:shadow-orange-500/40 border-2 border-transparent hover:border-orange-400/50 dark:hover:border-orange-400/50"
+        >
           <div class="relative w-full h-48 md:h-56 overflow-hidden bg-gray-200 dark:bg-gray-700">
             <img
               :src="project.image"
@@ -44,7 +45,9 @@ class="group bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg dark:border dark:b
           </div>
 
           <div class="relative z-10 p-4 md:p-6">
-            <h3 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">{{ project.title }}</h3>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+              {{ project.title }}
+            </h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">{{ project.description }}</p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span
