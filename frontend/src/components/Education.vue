@@ -37,7 +37,7 @@ export default {
 
         <div v-for="(edu, index) in educationHistory" :key="edu.id" class="relative mb-8">
           <div
-            class="absolute w-4 h-4 bg-orange-600 rounded-full z-10 ring-8 ring-gray-50 dark:ring-gray-900 top-1 left-4 transform -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 transition-colors duration-300"
+            class="backdrop-blur-sm absolute w-4 h-4 bg-orange-600 rounded-full z-10 ring-8 ring-gray-50/50 dark:ring-gray-900/50 top-1 left-4 transform -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 transition-colors duration-300"
           ></div>
 
           <div
